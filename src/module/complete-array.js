@@ -1,4 +1,4 @@
-﻿class AddArray {
+class AddArray {
   constructor(description, completed, id) {
     this.description = description;
     this.completed = completed;
