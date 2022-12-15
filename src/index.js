@@ -2,7 +2,7 @@
 import './style.css';
 import completeArray from './module/complete-array.js';
 
-let Array = [1];
+let Array = [];
 
 const container = document.querySelector('#list');
 
