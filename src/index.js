@@ -9,7 +9,7 @@ const container = document.querySelector('#list');
 const createTask = () => {
   for (let i = 0; i < Array.length; i += 1) {
     const task = document.createElement('div');
-    task.classList.add('fisrt_todo');
+    task.classList.add('first_todo');
     container.append(task);
 
     const checkbox = document.createElement('input');
@@ -17,6 +17,20 @@ const createTask = () => {
     task.append(checkbox);
 
     const paragraph = document.createElement('p');
+    paragraph.contentEditable = true;
+    paragraph.addEventListener('click', () => {
+      const editBtn = document.createElement('button');
+      editBtn.classList.add('editBtn');
+      editBtn.innerText = 'Edit';
+      task.append(editBtn);
+      editBtn.addEventListener('click', () => {
+        Array = JSON.parse(localStorage.getItem('Array')) || [];
+        Array[i].description = paragraph.innerText;
+        localStorage.setItem('Array', JSON.stringify(Array));
+        task.remove(editBtn);
+        window.location.reload();
+      });
+    });
     paragraph.classList.add('para');
     paragraph.innerText = Array[i].description;
     task.append(paragraph);
