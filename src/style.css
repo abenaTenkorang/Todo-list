@@ -55,12 +55,13 @@ body {
   gap: 2px;
 }
 
-.fisrt_todo {
+.first_todo {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   height: 40px;
   background-color: #fff;
+  align-items: center;
 }
 
 .para {
@@ -81,4 +82,14 @@ body {
   color: #fff;
   font-weight: 700;
   text-align: center;
+}
+
+.editBtn {
+  border: none;
+  height: 30px;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  width: 70px;
 }
