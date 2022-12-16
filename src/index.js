@@ -1,6 +1,7 @@
 /* eslint-disable no-loop-func */
 import './style.css';
 import completeArray from './module/complete-array.js';
+import checking from './module/checkbox.js';
 
 let Array = [];
 
@@ -14,9 +15,20 @@ const createTask = () => {
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+    checkbox.id = Array[i].id;
+    checkbox.addEventListener('click', () => {
+      checking(checkbox);
+    });
     task.append(checkbox);
 
     const paragraph = document.createElement('p');
+    if (Array[i].completed === true) {
+      paragraph.classList.add('checked');
+      checkbox.checked = true;
+    } else if (paragraph.classList.contains('checked')) {
+      paragraph.classList.remove('checked');
+      checkbox.checked = false;
+    }
     paragraph.contentEditable = true;
     paragraph.addEventListener('click', () => {
       const editBtn = document.createElement('button');
