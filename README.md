@@ -1,9 +1,4 @@
 # Todo-list
-<div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -81,36 +76,6 @@
 
 - [Live Demo Link]( https://abenatenkorang.github.io/Todo-list/)
 
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-
-If you dont have [node](https://node.org) install on your computer, Install node js from [https://nodejs.org/en](https://nodejs.org/en/) as your JavaScript Runtime Engine
-
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-
-[Download the ZIP from this location](https://github.com/abenaTenkorang/Todo-list/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
-
-- Once the files are on your machine, open the _Todo-list_ folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation
-
-### Setup
-
-1. Clone this repository to your desired folder:
-
-    ```sh
-      git clone https://github.com/abenaTenkorang/Todo-list.git
-    ```
-
-2. Install Node Modules
-
-   ```sh
-   npm install
-   ```
-   
-3. Open the `index.html` file in the project directory with your favorite browser
 
 ### Deployment
 <a name="triangular_flag_on_post-deployment"></a>
