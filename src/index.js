@@ -1,4 +1,3 @@
-/* eslint-disable no-loop-func */
 import './style.css';
 import completeArray from './module/complete-array.js';
 import checking from './module/checkbox.js';
@@ -8,21 +7,21 @@ let Array = [];
 const container = document.querySelector('#list');
 
 const createTask = () => {
-  for (let i = 0; i < Array.length; i += 1) {
+  Array.forEach((e) => {
     const task = document.createElement('div');
     task.classList.add('first_todo');
     container.append(task);
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.id = Array[i].id;
+    checkbox.id = e.id;
     checkbox.addEventListener('click', () => {
       checking(checkbox);
     });
     task.append(checkbox);
 
     const paragraph = document.createElement('p');
-    if (Array[i].completed === true) {
+    if (e.completed === true) {
       paragraph.classList.add('checked');
       checkbox.checked = true;
     } else if (paragraph.classList.contains('checked')) {
@@ -37,14 +36,14 @@ const createTask = () => {
       task.append(editBtn);
       editBtn.addEventListener('click', () => {
         Array = JSON.parse(localStorage.getItem('Array')) || [];
-        Array[i].description = paragraph.innerText;
+        Array[e.id].description = paragraph.innerText;
         localStorage.setItem('Array', JSON.stringify(Array));
         task.remove(editBtn);
         window.location.reload();
       });
     });
     paragraph.classList.add('para');
-    paragraph.innerText = Array[i].description;
+    paragraph.innerText = e.description;
     task.append(paragraph);
 
     const optButton = document.createElement('button');
@@ -54,7 +53,7 @@ const createTask = () => {
     const optIcon = document.createElement('i');
     optIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
     optButton.append(optIcon);
-    optButton.id = Array[i].id;
+    optButton.id = e.id;
 
     // task remove
     const removeTask = () => {
@@ -75,9 +74,10 @@ const createTask = () => {
       localStorage.setItem('Array', JSON.stringify(Array));
       window.location.reload();
     });
-  }
+  });
 };
 
+// enter- button
 const enterBtn = document.querySelector('.enter');
 enterBtn.addEventListener('click', () => {
   completeArray(Array);
