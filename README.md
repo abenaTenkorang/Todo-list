@@ -76,6 +76,41 @@
 
 - [Live Demo Link]( https://abenatenkorang.github.io/Todo-list/)
 
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  git clone https://github.com/abenaTenkorang/Todo-list.git
+  cd to-do-list
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
+
+### Usage
+
+To run the project in a development server, execute the following command:
+
+```sh
+  npm start
+```
+
+To to build for the production, execute the following command:
+
+```sh
+  npm run build
+```
+
 
 ### Deployment
 <a name="triangular_flag_on_post-deployment"></a>
