@@ -83,5 +83,21 @@ enterBtn.addEventListener('click', () => {
   completeArray(Array);
   window.location.reload();
 });
+
+const clearAll = document.querySelector('.clear_all');
+clearAll.addEventListener('click', () => {
+  Array = JSON.parse(localStorage.getItem('Array')) || [];
+  Array = Array.filter((e) => e.completed === false);
+  let refreshId = 0;
+
+  if (Array.length > 0) {
+    Array.forEach((p) => {
+      p.id = refreshId;
+      refreshId += 1;
+    });
+  }
+  localStorage.setItem('Array', JSON.stringify(Array));
+  window.location.reload();
+});
 Array = JSON.parse(localStorage.getItem('Array')) || [];
 createTask();
