@@ -1,8 +1,4 @@
 # Todo-list
-<div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -81,44 +77,12 @@
 
 - [Live Demo Link]( https://abenatenkorang.github.io/Todo-list/)
 
-<!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
-
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
-  git clone https://github.com/abenaTenkorang/Todo-list.git
-  cd to-do-list
-```
-
-### Install
-
-Install this project with:
-
-```sh
-  npm install
-```
-
-### Usage
-
-To run the project in a development server, execute the following command:
-
-```sh
-  npm start
-```
-
-To to build for the production, execute the following command:
-
+### Deployment
 ```sh
   npm run build
 ```
-
-### Deployment
 <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
