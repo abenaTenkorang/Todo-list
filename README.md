@@ -1,4 +1,5 @@
 # Todo-list
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -112,7 +113,11 @@ To to build for the production, execute the following command:
 ```
 
 
+
 ### Deployment
+```sh
+  npm run build
+```
 <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
