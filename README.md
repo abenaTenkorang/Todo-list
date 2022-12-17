@@ -74,7 +74,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]( https://abenatenkorang.github.io/Todo-list/)
+- [Live Demo Link](https://abenaTenkorang.github.io/Todo-list/dist) 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
