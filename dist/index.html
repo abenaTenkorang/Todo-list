@@ -11,7 +11,7 @@
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
     <div class="main-container">
-        <div id ="heading" class="heading refresh_btn">
+        <div id ="heading" class="heading">
             <h1 class="todo">
                 Today's To Do
             </h1>
@@ -19,16 +19,18 @@
                 <i class="fa-solid fa-arrows-rotate"></i>
             </button>
         </div>
-        <div>
+        <div class="input-area">
             <input type="text"class="input" id="input" placeholder="add-to-list">
-            <button>
-                <i class="fa-duotone fa-turn-down-left"></i>
+            <button class="enter">
+                <i class="material-icons">&#xe31b</i>
             </button>
         </div>
         <div id="list" class="list">
             <!-- js code goes here -->
         </div>
-        <button id="clear_all" class="clear_all"></button>
+        <button id="clear_all" class="clear_all">
+            clear all completed
+        </button>
     </div>
 </body>
 </html>
