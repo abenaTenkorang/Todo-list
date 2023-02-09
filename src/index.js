@@ -50,8 +50,9 @@ const createTask = () => {
     optButton.classList.add('optButton');
     task.append(optButton);
 
-    const optIcon = document.createElement('i');
-    optIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
+    const optIcon = document.createElement('button');
+    optIcon.classList.add('deleteBtn');
+    optIcon.innerText = 'Delete';
     optButton.append(optIcon);
     optButton.id = e.id;
 
