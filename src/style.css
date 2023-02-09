@@ -87,6 +87,16 @@ body {
 .editBtn {
   border: none;
   height: 30px;
+  background-color: royalblue;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  width: 70px;
+}
+
+.deleteBtn {
+  border: none;
+  height: 30px;
   background-color: blueviolet;
   color: #fff;
   font-weight: 700;
