@@ -28,11 +28,12 @@ const createTask = () => {
       paragraph.classList.remove('checked');
       checkbox.checked = false;
     }
+
+    const editBtn = document.createElement('button');
+    editBtn.classList.add('editBtn');
+    editBtn.innerText = 'Edit';
     paragraph.contentEditable = true;
     paragraph.addEventListener('click', () => {
-      const editBtn = document.createElement('button');
-      editBtn.classList.add('editBtn');
-      editBtn.innerText = 'Edit';
       task.append(editBtn);
       editBtn.addEventListener('click', () => {
         Array = JSON.parse(localStorage.getItem('Array')) || [];
