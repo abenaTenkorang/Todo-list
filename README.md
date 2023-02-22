@@ -27,7 +27,7 @@
  
   ## Browser Display
   
-![todo list](https://user-images.githubusercontent.com/109290913/217942232-385d313b-6c37-42aa-80bf-c294ccbec268.png)
+https://user-images.githubusercontent.com/109290913/220570230-f003e69e-2417-4a2c-b4dc-694bc85a80c8.mp4
 
  
 
@@ -64,6 +64,7 @@
 - **Edit tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
