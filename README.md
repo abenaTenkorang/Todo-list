@@ -29,8 +29,6 @@
   
 https://user-images.githubusercontent.com/109290913/220570230-f003e69e-2417-4a2c-b4dc-694bc85a80c8.mp4
 
- 
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,7 +77,6 @@ https://user-images.githubusercontent.com/109290913/220570230-f003e69e-2417-4a2c
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://abenaTenkorang.github.io/Todo-list/dist) 
 
